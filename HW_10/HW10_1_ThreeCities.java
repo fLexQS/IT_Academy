@@ -7,7 +7,7 @@ import java.util.Collections;
  * Даны названия трех городов. Вывести самое длинное и самое короткое.
  */
 
-public class ThreeCities {
+public class HW10_1_ThreeCities {
     public static void main(String[] args) {
         var list = new ArrayList<String>();
         Collections.addAll(list,"Москва", "Владивосток", "Уфа");
