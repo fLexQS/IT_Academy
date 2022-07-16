@@ -6,33 +6,33 @@ package IT_Academy.HW_12;
  */
 
 import java.io.*;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.Scanner;
 
 public class ReadFile {
     public static void main(String[] args) throws IOException {
-        var file = new File("demo.txt");
+        var file = new File("src/IT_Academy/HW_12/demo.txt");
         if (!file.exists()) {FileOutputStream oFile = new FileOutputStream(file, false);}
         FileWriter writer = new FileWriter(file, true);
         var builder = new StringBuilder();
-        var sc = new Scanner(file);
-        boolean noSkip = true;
+        var sc = new Scanner(file);// сканируем файл
         var i = 1;
-        writer.write("\n------------------------\n");
-        while (sc.hasNext()){
+        while (sc.hasNext()) {      //считываем пока есть строки
             var str = sc.nextLine();
-            if (str.equals("\n------------------------")) noSkip = false;
-            builder.append(str).append("\n");
+            System.out.println(str);
             String[] mas = str.split(" ");
-            if (noSkip) for(var item : mas){
-                writer.write((int) Math.pow(Integer.parseInt(item), i) +"\t");
+            for (var item : mas) {
+                writer.write((int) Math.pow(Integer.parseInt(item), i) + "\t");
+                builder.append((int) Math.pow(Integer.parseInt(item), i)).append("\t");
             }
             writer.write("\n");
+            builder.append("\n");
             i++;
-
         }
-        System.out.println(builder);
-        sc.close();
         writer.flush();
+        sc.close();
+        System.out.println(builder);
     }
 }
 
