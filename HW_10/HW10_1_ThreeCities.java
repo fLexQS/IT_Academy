@@ -11,6 +11,7 @@ public class HW10_1_ThreeCities {
     public static void main(String[] args) {
         var list = new ArrayList<String>();
         Collections.addAll(list,"Москва", "Владивосток", "Уфа");
+        System.out.println("Наименование городов с максимальным и минимальным кол-ом букв:");
         list.stream().sorted((o1, o2) -> Math.abs(o1.length() - o2.length())).skip(1).forEach(System.out::println);
     }
 }
