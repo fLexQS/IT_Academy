@@ -5,9 +5,10 @@ package IT_Academy.HW_12;
  * строки. Дозаписать в файл полученную матрицу.
  */
 
-import java.io.*;
-import java.net.URISyntaxException;
-import java.net.URL;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class ReadFile {

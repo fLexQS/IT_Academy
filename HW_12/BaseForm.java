@@ -119,26 +119,26 @@ public class BaseForm extends JFrame implements ActionListener {
     private void arifLog(String select_oper) {
         oper = select_oper;
         //if (!select_oper.equals("%")) {
-            number1 = getNumber();
-            if (textField.getText().contains(" "))
-                textField.setText(textField.getText().replaceAll("\s.\s", " " + oper + " "));
-            else textField.setText(text.getText().concat(" " + oper + " "));
-            //if (text.getText().contains(" "))
-            text.setText("");
-       // }
+        number1 = getNumber();
+        if (textField.getText().contains(" "))
+            textField.setText(textField.getText().replaceAll("\s.\s", " " + oper + " "));
+        else textField.setText(text.getText().concat(" " + oper + " "));
+        //if (text.getText().contains(" "))
+        text.setText("");
+        // }
     }
 
     //Сброс всех полей
     private void clear() {
         number1 = 0;
         number2 = 0;
-        text.setText("0");
+        text.setText("");
         textField.setText("");
     }
 
     //Сброс ввода
     private void clearCE() {
-        text.setText("0");
+        text.setText("");
     }
 
     //Удалить последний символ ввода
@@ -166,7 +166,6 @@ public class BaseForm extends JFrame implements ActionListener {
                 number1 = getNumber();
                 textField.setText("sqr(" + number1 + ")");
                 number1 = Math.pow(number1, 2);
-                System.out.println(number1);
                 text.setText(String.valueOf(number1));
             }
 
