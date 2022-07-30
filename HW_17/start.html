@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        td {
+            text-align: center;
+            vertical-align: top;
+        }
+        table{
+            margin: 0 auto;
+           
+        }        
+        #header{
+            width: 1900px;
+        }
+        #header{
+            vertical-align:middle ;
+        }
+        ul{
+            text-align: left;
+        }
+    </style>
+</head>
+<body style="background-image:url(fon.jpg)">
+    <table width="100%" height="950" border="1px solid gray">
+        <tr style="height:200px">
+            <td colspan="3">
+                <table id="header">
+                    <td width="250"  >
+                        <div style="padding-top:100%;position:relative;"><iframe src="https://gifer.com/embed/fy2H" width="100%" height="100%" style='position:absolute;top:0;left:0;' frameBorder="0" allowFullScreen></iframe>
+                    </td>
+                    <td width = "1300">
+                        <h1> <span style="color: rgb(144, 209, 148);">Всё для жизни и радости <br>любимого питомца</h1>
+                    </td> 
+                    <td >
+                        <a class="phone" href="tel:8(495)358-35-57">
+                            8 (800) 222-27-25 <div class="tip">Бесплатный звонок</div>
+                            <div class="tip">Прием звонков с 10:00 до 21:00 по МСК</div>
+                            </a>
+                        <h1>Здесь могла быть <br> ваша реклама</h1>
+                    </td>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td width = "250">
+                <h1>Главное меню</h1>
+                <ul>
+                    <li>
+                        <a href="#">Главная страница</a>
+                    </li>
+                     <li>
+                        <a href="#">Услуги</a>
+                    </li>
+                     <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </td>            
+            <td width="1300">
+                <h1>Хиты продаж</h1>
+                <!-- <div class="title title-center">Хиты продаж</div> -->
+                <img src="https://cdn1.ozone.ru/s3/multimedia-o/wc1200/6286705752.jpg" width="170" height="200" alt="purina">
+                <p >300 рублей</p> 
+                <img src="https://cdn1.ozone.ru/s3/multimedia-x/wc1200/6229401681.jpg" width="170" height="200" alt="Лидинг">
+                <p>1500 рублей</p>                
+                <img src="https://cdn1.ozone.ru/s3/multimedia-e/wc1200/6181723334.jpg" width="200" height="200" alt="тоннель">
+                <p>3000 рублей</p>
+                <img src="https://cdn1.ozone.ru/s3/multimedia-a/wc1200/6208415422.jpg" width="200" height="200" alt="лоток">
+                <p>30000 рублей</p>
+            </td>
+            <td>
+                <div>
+                    <form action="server" method="post" enctype="multipart/form-data">
+                        <p>Ваш город</p>
+                        <input type="radio" name="city" value="Москва">Москва <br>
+                        <input type="radio" name="city" value="Казань">Казань <br>
+                        <input type="radio" name="city" value="Волгоград">Волгоград <br>
+    
+                        <p>Дополнительно</p>
+                        <input type="checkbox" name="lang" value="woCall">Не звонить<br>
+                        <input type="checkbox" name="lang" value="woBell">Оставить у двери<br>
+                        <input type="checkbox" name="lang" value="help">Помочь детям &hearts;<br>
+                    
+                        <p>Ваше имя:</p> 
+                        <input type="text" name="fio">
+                        <p>Комментарии к заказу:</p>
+                        <textarea name="biogr" id="biogr" cols="30" rows="10"></textarea>
+                    
+                        <p>ВВыберите удобное время доставки</p>
+                        <select name="test">
+                            <option value="day">09:00-20:00</option>
+                            <option value="От 3 лет">17:00-22:00</option>
+                        </select>
+
+                        <br>
+
+                        <p>Дата доставки</p>
+                        <input type="date" name="delivery"><br><br>
+                        <input type="submit" value="Оформить заказ!">
+                    </form>
+                </div>
+            </td>
+        </tr>
+    <tr style="height: 80px;">
+        <td colspan="3">
+            <h1>Изучено в IT Academy</h1>
+        </td>
+    </tr>
+    </table>
+    <footer>
+        <div class="footer">
+            Оплатить занятия можно:
+            <img src="payment-icons.svg">
+        </div>
+        <div class="copyright">
+            © 2022 Студенты IT Academy. Бесполезные и не защищают правами.
+        </div>
+    </footer>
+</body>
+</html>
