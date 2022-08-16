@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <driver>com.mysql.cj.jdbc.Driver</driver>
+    <DB>shop</DB>>
+    <login>root</login>>
+    <pass>root</pass>>
+</configuration>
